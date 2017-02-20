@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      var arrImages = new Array('images/home.png','images/instructions.png','images/timer_3.png');
+      var currentImage = 0;
+      function ImageLoaded(){
+        currentImage++;
+     if(currentImage>=arrImages.length)currentImage=0;
+     var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",5000);
+      }
+      function ChangeImage(xImg,xSrc){
+        document.getElementById(xImg).src=xSrc;
+      }
+    </script>
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+      $(function(){
+        $( "img" ).bind( "tap", tapHandler );
+ 
+        function tapHandler( event ){
+        $( event.target ).addClass( "tap" );
+        }
+      });
+  </script>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <img src="images/home.png" id="theImg" alt="image">
+  </body>
+  </html>
