@@ -4,5 +4,5 @@ img {
 
 
  img.tap {
-    content: url("http://google.com");
+    content: url('images/timer_3.png');
   }
