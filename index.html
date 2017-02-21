@@ -18,11 +18,12 @@
     <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript">
       var classArray = new Array("tap","tap2");
+      var currentTap = classArray.shift();
       $(function(){
-        $( "img" ).bind(classArray.shift(), tapHandler );
+        $( "img" ).bind(currentTap, tapHandler );
         
         function tapHandler( event ){
-        $( event.target ).addClass(classArray.shift());
+        $( event.target ).addClass(currentTap);
         }
       });
   </script>
