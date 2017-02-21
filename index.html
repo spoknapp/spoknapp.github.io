@@ -13,10 +13,11 @@
         
         function tapHandler( event ){
         $( event.target ).addClass(currentTap);
-        currentTap = classArray.shift();
         if (currentTap == "tap2") {
           window.location = "https://spoknapp.github.io/timed.html";
-        }
+        } else {
+        currentTap = classArray.shift();
+      }
         }
       });
 
