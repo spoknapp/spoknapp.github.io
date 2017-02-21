@@ -16,18 +16,20 @@
     <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script>
+    <script type="text/javascript">
+      var classArray = new Array("tap","tap2");
       $(function(){
-        $( "img" ).bind( "tap", tapHandler );
- 
+        $( "img" ).bind(classArray.shift(), tapHandler );
+        
         function tapHandler( event ){
-        $( event.target ).addClass( "tap" );
+        $( event.target ).addClass(classArray.shift());
         }
       });
   </script>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
-    <img src="images/home.png" id="theImg" alt="image">
+    <img src="images/home.png" alt="image">
+
   </body>
   </html>
