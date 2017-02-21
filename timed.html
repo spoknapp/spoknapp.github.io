@@ -13,7 +13,10 @@
       var currentImage = 0;
       function ImageLoaded(){
         currentImage++;
-        if(currentImage>=arrImages.length)clearTimeout();
+        if(currentImage>=arrImages.length) {
+        	clearTimeout();
+        	ChangeImage('theImg','" + 'images/great_job.png' + "')
+        }
 
         var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",1000);
       }
