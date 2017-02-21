@@ -2,12 +2,12 @@
 <html>
   <head>
     <script type="text/javascript">
-      var arrImages = new Array('images/home.png','images/instructions.png','images/timer_3.png');
+      var arrImages = new Array('images/timer_2.png', 'images/timer_1.png');
       var currentImage = 0;
       function ImageLoaded(){
         currentImage++;
-     if(currentImage>=arrImages.length)currentImage=0;
-     var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",5000);
+        if(currentImage>=arrImages.length)currentImage=0;
+        var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",5000);
       }
       function ChangeImage(xImg,xSrc){
         document.getElementById(xImg).src=xSrc;
@@ -19,6 +19,9 @@
     <script type="text/javascript">
       var classArray = new Array("tap","tap2");
       var currentTap = classArray.shift();
+      if (currentTap == "tap2") {
+        ImageLoaded();
+      } else {
       $(function(){
         $( "img" ).bind(currentTap, tapHandler );
         
@@ -26,7 +29,7 @@
         $( event.target ).addClass(currentTap);
         currentTap = classArray.shift();
         }
-      });
+      });}
   </script>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
