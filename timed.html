@@ -12,8 +12,9 @@
       var arrImages = new Array('images/timer_3.png','images/timer_2.png', 'images/timer_1.png', 'images/great_job.png');
       var currentImage = 0;
       function ImageLoaded(){
-        currentImage++;
+ 
         var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",1000);
+ 		currentImage++;
         if(currentImage==arrImages.length)clearTimeout();
     	
       }
