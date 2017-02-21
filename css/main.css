@@ -6,3 +6,7 @@ img {
  img.tap {
     content: url('https://spoknapp.github.io/images/instructions.png');
   }
+
+  img.tap2 {
+  	content: url('https://spoknapp.github.io/images/timer_3.png');
+  }
