@@ -13,7 +13,8 @@
       var currentImage = 0;
       function ImageLoaded(){
   		currentImage++;
-  		if(currentImage==3)clearTimeout();
+  		if(currentImage==3)
+  			var timeout = clearTimeout();
         var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",1000);
 
 
