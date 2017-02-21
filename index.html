@@ -14,11 +14,11 @@
       }
       var classArray = new Array("tap","tap2");
       var currentTap = classArray.shift();
-      $(function(){
-        $( "img" ).bind(currentTap, tapHandler );
+      (function(){
+        ( "img" ).bind(currentTap, tapHandler );
         
         function tapHandler( event ){
-        $( event.target ).addClass(currentTap);
+        ( event.target ).addClass(currentTap);
         currentTap = classArray.shift();
         ImageLoaded();
         }
