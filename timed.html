@@ -13,12 +13,9 @@
       var currentImage = 0;
       function ImageLoaded(){
         currentImage++;
-        if(currentImage==arrImages.length) {
-        	ChangeImage('theImg','" + arrImages[currentImage] + "');
-        	clearTimeout();
-        } else {
+        
         var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",1000);
-    	}
+    	
       }
       function ChangeImage(xImg,xSrc){
         document.getElementById(xImg).src=xSrc;
