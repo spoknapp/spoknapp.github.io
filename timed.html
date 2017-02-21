@@ -9,11 +9,11 @@
     <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript">
 
-      var arrImages = new Array('images/timer_3.png','images/timer_2.png', 'images/timer_1.png');
+      var arrImages = new Array('images/timer_3.png','images/timer_2.png', 'images/timer_1.png', 'images/great_job.png');
       var currentImage = 0;
       function ImageLoaded(){
         currentImage++;
-        if(currentImage>=arrImages.length) ChangeImage('theImg','" + 'images/great_job.png' + "');
+        if(currentImage=arrImages.length) ChangeImage('theImg'" + arrImages[currentImage] + "');
         var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",1000);
       }
       function ChangeImage(xImg,xSrc){
