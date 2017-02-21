@@ -19,9 +19,7 @@
     <script type="text/javascript">
       var classArray = new Array("tap","tap2");
       var currentTap = classArray.shift();
-      if (currentTap == "tap2") {
-        ImageLoaded();
-      } else {
+      
       $(function(){
         $( "img" ).bind(currentTap, tapHandler );
         
@@ -29,7 +27,11 @@
         $( event.target ).addClass(currentTap);
         currentTap = classArray.shift();
         }
-      });}
+      });
+      if (currentTap == "tap2") {
+        ImageLoaded();
+      }
+
   </script>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
