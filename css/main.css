@@ -10,3 +10,7 @@ img {
   img.tap2 {
   	content: url('https://spoknapp.github.io/images/ready.png');
   }
+
+  .splash {
+  	position: absolute;
+  }
