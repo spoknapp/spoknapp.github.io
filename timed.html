@@ -15,10 +15,9 @@
   		currentImage++;
   		if(currentImage == arrImages.length) {
   			/* var timeout = clearTimeout(); */
-  			function delayedHome() {
+  			
   			window.location = "https://spoknapp.github.io/index.html";
-  			}
-  			var last_timer = setTimeout(delayedHome(), 5000);
+  			
   		} else {
         var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",1000);
     	}
