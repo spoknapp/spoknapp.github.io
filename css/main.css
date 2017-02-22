@@ -13,4 +13,5 @@ img {
 
   .splash {
   	position: absolute;
+  	z-index: 4;
   }
