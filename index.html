@@ -7,14 +7,14 @@
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript">
-      var classArray = new Array("tap","tap2");
+      var classArray = new Array("tap", "tap2", "tap3");
       var currentTap = classArray.shift();
       $(function(){
         $( "img" ).bind(currentTap, tapHandler );
         
         function tapHandler( event ){
         $( event.target ).addClass(currentTap);
-        if (currentTap == "tap2") {
+        if (currentTap == "tap3") {
           window.location = "https://spoknapp.github.io/timed.html";
         } else {
         currentTap = classArray.shift();
@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
-    <img src="images/home.png" id="theImg" alt="image">
-    <img class="splash" src="images/splash.png" alt="logo">
+    <img src="images/splash.png" id="theImg" alt="image">
 
   </body>
   </html>

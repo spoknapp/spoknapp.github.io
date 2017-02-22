@@ -4,20 +4,13 @@ img {
 
 
  img.tap {
-    content: url('https://spoknapp.github.io/images/instructions.png');
-    position: relative;
-    z-index: 1;
+    content: url('https://spoknapp.github.io/images/home.png');
   }
 
   img.tap2 {
-  	content: url('https://spoknapp.github.io/images/ready.png');
-  	position: relative;
-  	z-index: 1;
+  	content: url('https://spoknapp.github.io/images/instructions.png');
   }
 
-  .splash {
-  	position: absolute;
-  	z-index: 4;
-  	top:0;
-  	left:0;
-  }
+img.tap3 {
+	content: url('https://spoknapp.github.io/images/ready.png');
+}
