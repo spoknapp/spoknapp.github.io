@@ -5,13 +5,11 @@ img {
 
  img.tap {
     content: url('https://spoknapp.github.io/images/instructions.png');
-    position:relative;
     z-index: 1;
   }
 
   img.tap2 {
   	content: url('https://spoknapp.github.io/images/ready.png');
-  	position: relative;
   	z-index: 1;
   }
 
