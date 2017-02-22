@@ -15,6 +15,7 @@
   		currentImage++;
   		if(currentImage == arrImages.length) {
   			var timeout = clearTimeout();
+  			window.location = "https://spoknapp.github.io/index.html";
   		} else {
         var timer = setTimeout("ChangeImage('theImg','" + arrImages[currentImage] + "')",1000);
     	}
